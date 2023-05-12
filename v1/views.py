@@ -7,7 +7,7 @@ from .models import Deck, Slide
 
 # Create your views here.
 class DeckViewSet(viewsets.ModelViewSet):
-    queryset = Deck.objects.all().order_by('name')
+    queryset = Deck.objects.all().order_by('last_modified')
     serializer_class = DeckSerializer
 
 class SlideViewSet(viewsets.ModelViewSet):

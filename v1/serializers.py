@@ -5,7 +5,7 @@ from .models import Deck, Slide
 class DeckSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Deck
-        fields = ('name', 'description', 'date', 'last_modified')
+        fields = ('id', 'name', 'description', 'date', 'last_modified')
 
 class SlideSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
