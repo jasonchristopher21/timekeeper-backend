@@ -10,4 +10,4 @@ class DeckSerializer(serializers.HyperlinkedModelSerializer):
 class SlideSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Slide
-        fields = ('deck_id', 'slide_number', 'title', 'content', 'duration')
+        fields = ('id','deck_id', 'slide_number', 'title', 'content', 'duration')
